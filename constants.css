@@ -1,0 +1,30 @@
+/*
+ *  Some references found on this file were taken from: 
+ *  https://xd.adobe.com/view/ea696dd0-8781-4460-8720-36deb2d19b2a-bf3a/
+ *
+ */
+:root {
+    --primary-color: #A1C4FD;
+    --secondary-color: #C2E9FB;
+    --white-color: #FFFFFF;
+    --shadow-color: #0000001F;
+    --selected-color: #324BFF;
+    --border-color: #CCCCCC;
+    --text-color: #333333;
+    --black-color: #000000cc;
+
+    --input-background-color: #F7F7F7;
+    --list-item-background-color: var(--input-background-color);
+}
+
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url('./assets/fonts/montserrat-medium.woff') format('.woff'),
+         url('./assets/fonts/montserrat-medium.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'Montserrat-regular';
+    src: url('./assets/fonts/montserrat-regular.woff') format('woff'),
+         url('./assets/fonts/montserrat-regular.woff2') format('woff2'),
+}
