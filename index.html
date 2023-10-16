@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Vanilla JS Tech-Proof</title>
+</head>
+<body>
+    <div class="appContainer" id="appContainer">
+        <div class="card">
+            <h2 class="cardTitle">This is a technical proof</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Non hic incidunt neque deserunt. 
+                Illum distinctio in quos sapiente ipsa minus.
+            </p>
+            <div class="listContainer" id="textList"></div>
+            <div class="cardActionsContainer">
+                <div class="secondaryActionsContainer">
+                    <button type="button" class="standardButton iconButton" id="undoBtn">
+                        <!--  Refresh icon -->
+                        <svg
+                            enable-background="new 0 0 50 50"  
+                            class="standardIcon"
+                            viewBox="0 0 50 50"
+                            color='currentColor'
+                        >
+                            <polyline 
+                                fill="currentColor" 
+                                points="40,7 40,16   31,15.999 " 
+                                stroke="currentColor" 
+                                stroke-linecap="round" 
+                                stroke-miterlimit="10" 
+                                stroke-width="3"/>
+                            <path 
+                                d="M41.999,25  c0,9.39-7.61,17-17,17s-17-7.61-17-17s7.61-17,17-17c5.011,0,9.516,2.167,12.627,5.616c0.618,0.686,1.182,1.423,1.683,2.203" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                stroke-linecap="round" 
+                                stroke-miterlimit="10" 
+                                stroke-width="3"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="standardButton" id="deleteBtn">DELETE</button>
+                </div>
+                <button class="standardButton addButton" id="addBtn">ADD</button>
+            </div>
+        </div>
+        <div class="backTint" id="popupContainer">
+            <div class="card actionsPopUp" id="popup">
+                <h3>Add item to list</h3>
+                <input class="standardInput" id="popupInput" />
+                <div>
+                    <button class="standardButton" id="cancelBtn" >
+                        CANCEL
+                    </button>
+                    <button class="standardButton addButton" id="acceptBtn" >
+                        ADD
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./constants.js"></script>
+<script src="./index.js"></script>
+</html>

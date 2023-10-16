@@ -1,0 +1,174 @@
+@import 'constants.css';
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    color: var(--text-color);
+    font-family: 'Montserrat-regular';
+    font-size: 18px;
+    font-weight: 100;
+    user-select: none;
+}
+
+.cardTitle {
+    margin: 0;
+    font-family: 'Montserrat-medium';
+    font-size: 2rem;
+}
+
+.backTint {
+    background-color: var(--black-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 1;
+}
+
+.appContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: var(--primary-color);
+    background: linear-gradient(
+        90deg, 
+        var(--primary-color) 0%, 
+        var(--secondary-color) 100%
+    );
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 2px solid transparent;
+    border-radius: 0.3rem;
+    padding: 20px 50px;
+    max-width: 50%;
+    max-height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.actionsPopUp {
+    display: flex;
+    position: relative;
+    top: 30%;
+    margin: auto;
+    z-index: 1000;
+    height: 10rem;
+    width: 20rem;
+}
+
+.standardButton {
+    font-family: 'Montserrat-regular';
+    color: var(--selected-color);
+    font-size: 1rem;
+    padding: 10px 30px;
+    background-color: var(--white-color);
+    border: 2px solid var(--selected-color);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+
+.iconButton {
+    padding: 0 30px;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.standardIcon {
+    height: 2rem;
+    color: var(--selected-color);
+}
+
+.addButton {
+    color: var(--white-color);
+    background-color: var(--selected-color);
+    border: 2px solid var(--selected-color);
+}
+
+.listContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: 0.1rem;
+    border: 2px solid var(--border-color);
+    margin: 15px 0;
+    max-height: 20%;
+    min-height: 6rem;
+    list-style: none;
+    background-color: var(--list-item-background-color);
+    overflow-y: auto;
+}
+
+.listItem {
+    background-color: var(--list-item-background-color);
+    text-align: initial;
+    text-indent: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.listItem:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.selected {
+    background-color: var(--selected-color);
+    color: var(--white-color);
+}
+
+.cardActionsContainer  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.secondaryActionsContainer {
+    height: 100%;
+    width: 13rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.standardInput {
+    font-family: 'Montserrat-regular';
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: var(--input-background-color);
+    border: 2px solid var(--border-color);
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .cardActionsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .secondaryActionsContainer {
+        height: auto;
+        margin-bottom: 0.2rem;
+    }
+}
