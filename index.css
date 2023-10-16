@@ -153,6 +153,7 @@ body, html {
 .standardInput {
     font-family: 'Montserrat-regular';
     color: var(--text-color);
+    width: 80%;
     font-size: 16px;
     padding: 10px 20px;
     background-color: var(--input-background-color);
